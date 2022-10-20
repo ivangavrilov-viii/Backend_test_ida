@@ -3,7 +3,7 @@ from django.utils.translation import gettext_lazy as _
 
 
 class BankOffer(models.Model):
-    """Предложение по ипотеке"""
+    """Модель: предложение по ипотеке"""
 
     id = models.AutoField(primary_key=True)
     bank_name = models.CharField(max_length=100, verbose_name=_('Bank name'))

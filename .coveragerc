@@ -1,0 +1,22 @@
+[report]
+exclude_lines =
+    except BaseException
+    except ValueError
+    pragma: no cover
+    def repr
+    def str
+    if self\.debug
+    raise AssertionError
+    raise NotImplementedError
+    if 0:
+    if name == .main.:
+
+omit =
+    config/*
+    manage.py
+
+ignore_errors = False
+skip_empty = True
+
+[html]
+directory = coverage_html_report
